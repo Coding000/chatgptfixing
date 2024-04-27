@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+        header a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .book {
+            width: 30%;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .book img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#contact">Contact</a>
+        <a href="#categories">Categories</a>
+        <a href="#new-arrivals">New Arrivals</a>
+    </header>
+
+    <section id="books">
+        <div class="book">
+            <img src="book1.jpg" alt="Book 1">
+            <h3>Title: Book Title 1</h3>
+            <p>Author: Author Name 1</p>
+            <p>Genre: Fiction</p>
+            <p>Synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales sapien quis justo aliquam, ut suscipit nunc venenatis.</p>
+        </div>
+
+        <div class="book">
+            <img src="book2.jpg" alt="Book 2">
+            <h3>Title: Book Title 2</h3>
+            <p>Author: Author Name 2</p>
+            <p>Genre: Mystery</p>
+            <p>Synopsis: Nullam fringilla dui in libero laoreet, non ultricies ipsum semper. Fusce eget pharetra nunc.</p>
+        </div>
+
+        <div class="book">
+            <img src="book3.jpg" alt="Book 3">
+            <h3>Title: Book Title 3</h3>
+            <p>Author: Author Name 3</p>
+            <p>Genre: Romance</p>
+            <p>Synopsis: Etiam id diam sit amet mauris vulputate dictum. Vivamus feugiat purus nec luctus dapibus.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="general">General Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="support">Support</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2024 Bookstore. All rights reserved.
+    </footer>
+</body>
+</html>
